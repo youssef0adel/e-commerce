@@ -1,0 +1,143 @@
+.loader {
+      width: 48px;
+      height: 48px;
+      border-radius: 50%;
+      position: relative;
+      animation: rotate 1s linear infinite;
+    }
+    .loader::before {
+      content: "";
+      box-sizing: border-box;
+      position: absolute;
+      inset: 0px;
+      border-radius: 50%;
+      border: 5px solid #000dff;
+      animation: prixClipFix 2s linear infinite ;
+    }
+
+    @keyframes rotate {
+      100%   {transform: rotate(360deg)}
+    }
+
+    @keyframes prixClipFix {
+        0%   {clip-path:polygon(50% 50%,0 0,0 0,0 0,0 0,0 0)}
+        25%  {clip-path:polygon(50% 50%,0 0,100% 0,100% 0,100% 0,100% 0)}
+        50%  {clip-path:polygon(50% 50%,0 0,100% 0,100% 100%,100% 100%,100% 100%)}
+        75%  {clip-path:polygon(50% 50%,0 0,100% 0,100% 100%,0 100%,0 100%)}
+        100% {clip-path:polygon(50% 50%,0 0,100% 0,100% 100%,0 100%,0 0)}
+    }
+
+    .img-hover
+    {
+        transition: .5s;
+    }
+    .img-hover:hover
+    {
+        transform: scale(1.1);
+    }
+
+
+    .cursor-pointer {
+  cursor: pointer;
+}
+
+.img-hover {
+  transition: transform 0.3s ease;
+}
+
+.img-hover:hover {
+  transform: scale(1.05);
+}
+
+.Product:hover {
+  transform: translateY(-5px);
+  transition: transform 0.3s ease;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15) !important;
+}
+
+.fa-star, .fa-star-half-alt {
+  font-size: 0.9em;
+}
+
+.small {
+  font-size: 0.8em;
+}
+
+.thumbnail-images img {
+  transition: all 0.3s ease;
+}
+
+.thumbnail-images img:hover {
+  transform: scale(1.1);
+}
+
+.product-features li {
+  padding: 0.25rem 0;
+}
+
+
+.spinner-border {
+  width: 3rem;
+  height: 3rem;
+}
+
+.form-check-input:checked {
+  background-color: #0d6efd;
+  border-color: #0d6efd;
+}
+
+.form-control-sm {
+  padding: 0.25rem 0.5rem;
+  font-size: 0.875rem;
+}
+
+.text-muted {
+  color: #6c757d !important;
+}
+
+@media (max-width: 768px) {
+  .container.p-5 {
+    padding: 1rem !important;
+  }
+  
+  .row.g-4 {
+    gap: 1rem;
+  }
+}
+
+
+.input-group-lg .form-control {
+  border-radius: 0.5rem 0 0 0.5rem;
+}
+
+.input-group-lg .btn {
+  border-radius: 0 0.5rem 0.5rem 0;
+}
+
+.search-highlight {
+  background-color: #fff3cd;
+  padding: 0.1rem 0.2rem;
+  border-radius: 0.2rem;
+}
+
+@media (max-width: 768px) {
+  .input-group-lg {
+    flex-direction: column;
+  }
+  
+  .input-group-lg .form-control {
+    border-radius: 0.5rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .input-group-lg .btn {
+    border-radius: 0.5rem;
+    width: 100%;
+  }
+}
+
+.alert-info {
+  background-color: #d1ecf1;
+  border-color: #bee5eb;
+  color: #0c5460;
+}

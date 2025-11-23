@@ -1,0 +1,17 @@
+.main-img
+{
+    object-fit: cover;
+}
+
+.img-thumbnail
+{
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    cursor: pointer;
+}
+
+.realated-img
+{
+    object-fit: cover;
+}
