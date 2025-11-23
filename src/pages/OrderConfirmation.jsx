@@ -16,11 +16,14 @@ export default function OrderConfirmation() {
   );
 
   return (
-    <div className="text-center">
-      <h3>Thank you! Your order has been placed.</h3>
-      <p className="lead">Order ID: <strong>{order.id}</strong></p>
-      <p>Total: <strong>${Number(order.total).toFixed(2)}</strong></p>
-      <Link to="/profile" className="btn btn-primary mt-3">View your orders</Link>
+    <div className="text-center vh-100 d-flex justify-content-center align-items-center">
+      <div>
+          <h3>Thank you (الف شكر)! Your order has been placed.</h3>
+          <p className="lead">Order ID: <strong>{order.id}</strong></p>
+          <p>Total: <strong>${Number(order.total).toFixed(2)}</strong></p>
+          <Link to="/profile" className="btn btn-primary mt-3">View your orders</Link>
+      </div>
+      
     </div>
   );
 }

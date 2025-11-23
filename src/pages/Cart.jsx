@@ -22,8 +22,8 @@ export default function Cart() {
     );
 
   return (
-    <div className="container py-5">
-      <div className="row g-4">
+    <div className="container py-5 ">
+      <div className="row g-4 py-5">
         <div className="col-md-8">
           <div className="list-group shadow-sm rounded-4 overflow-hidden">
             {items.map((it) => (

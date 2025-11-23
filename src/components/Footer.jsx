@@ -22,7 +22,6 @@ export default function Footer() {
                 <li><a href="/">Home</a></li>
                 <li><a href="/shop">Shop</a></li>
                 <li><a href="/about">About</a></li>
-                <li><a href="/contact">Contact</a></li>
               </ul>
             </div>
             <div className="col-lg-2 col-6">
@@ -37,9 +36,9 @@ export default function Footer() {
             <div className="col-lg-4">
               <h6>Contact Info</h6>
               <div className="contact-info">
-                <p><i className="fas fa-map-marker-alt me-2"></i> 123 Street, City, Country</p>
-                <p><i className="fas fa-phone me-2"></i> +1 234 567 890</p>
-                <p><i className="fas fa-envelope me-2"></i> info@ecommerce.com</p>
+                <p><i className="fas fa-map-marker-alt me-2"></i> Beni Suef</p>
+                <p><i className="fas fa-phone me-2"></i> 010000020</p>
+                <p><i className="fas fa-envelope me-2"></i> YATAMA@gmail.com</p>
               </div>
             </div>
           </div>
