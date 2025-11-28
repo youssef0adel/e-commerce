@@ -32,6 +32,7 @@ export default function Signup()
       const result = await apiService.createUser(form);
       console.log("Signup response:", result);
 
+
       if (result._id || result.id) 
       {
         const user = {

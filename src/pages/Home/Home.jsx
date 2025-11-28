@@ -254,14 +254,9 @@ export default function Home() {
             </div>
             <div className="col-lg-6">
               <form className="newsletter-form">
-                <div className="input-group">
-                  <input 
-                    type="email" 
-                    className="form-control form-control-lg" 
-                    placeholder="Enter your email address"
-                    required
-                  />
-                  <button className="btn btn-light btn-lg" type="submit">
+                <div className="d-flex ">
+                  <input type="email" className="form-control form-control-lg rounded-0" placeholder="Enter your email address"required/>
+                  <button className="btn btn-light btn-lg rounded-0" type="submit">
                     Subscribe
                   </button>
                 </div>

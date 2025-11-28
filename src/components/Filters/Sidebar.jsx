@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { apiService } from "../../services/api";
 
+
 const Sidebar = ({ selectedCategory, onSelectCategory, onPriceChange }) => {
   const [categories, setCategories] = useState([]);
   const [minPrice, setMinPrice] = useState('');
@@ -11,7 +12,9 @@ const Sidebar = ({ selectedCategory, onSelectCategory, onPriceChange }) => {
       try {
         const categoriesData = await apiService.getCategoriesFromProducts();
         setCategories(categoriesData);
-      } catch (err) {
+      } 
+      catch (err) 
+      {
         console.log("Error fetching categories:", err);
       }
     };
@@ -19,7 +22,8 @@ const Sidebar = ({ selectedCategory, onSelectCategory, onPriceChange }) => {
     fetchCategories();
   }, []);
 
-  const handlePriceFilter = () => {
+  const handlePriceFilter = ()=>
+  {
     const min = minPrice ? parseInt(minPrice) : null;
     const max = maxPrice ? parseInt(maxPrice) : null;
     onPriceChange(min, max);

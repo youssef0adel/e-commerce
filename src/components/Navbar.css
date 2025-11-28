@@ -235,7 +235,7 @@
 }
 
 .user-menu-item:hover {
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+ background: linear-gradient(135deg, #4963d8 0%, #3568b3 100%);
   color: white;
   transform: translateX(5px);
 }
@@ -274,7 +274,7 @@
 
 @media (max-width: 991.98px) {
   .navbar-collapse {
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+     background: linear-gradient(135deg, #4963d8 0%, #3568b3 100%);
     padding: 1rem;
     border-radius: 15px;
     margin-top: 1rem;

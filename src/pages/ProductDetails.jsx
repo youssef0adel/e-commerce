@@ -158,7 +158,7 @@ export default function ProductDetails() {
           <h3 className="mb-4">Related Products</h3>
           <div className="row g-4">
             {related.map((r) => (
-              <div key={r._id} className="col-6 col-md-4 col-lg-3">
+              <div key={r._id} className="col-md-3">
                 <div className="card h-100 shadow-sm cursor-pointer overflow-hidden rounded-3" onClick={() => handleRelatedProductClick(r._id)}
                   style={{ cursor: 'pointer', transition: 'transform 0.2s' }}
                   onMouseEnter={(e) => e.currentTarget.style.transform = 'translateY(-5px)'}

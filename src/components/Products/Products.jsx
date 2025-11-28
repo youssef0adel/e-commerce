@@ -20,7 +20,7 @@ const Products = () => {
   const navigate = useNavigate();
   const { addToCart } = useCart();
 
-
+// المسءوله عن عرض عدد التقييمات
   const renderStars = (rating) => {
     const stars = [];
     const fullStars = Math.floor(rating);
@@ -144,10 +144,10 @@ const Products = () => {
       <div className="row mb-5">
         <div className="col-md-8 mx-auto">
           <form onSubmit={handleSearch}>
-            <div className="input-group input-group-lg">
+            <div className="d-flex align-items-center">
               <input
                 type="text"
-                className="form-control"
+                className="border-1 p-3 rounded-3 my-3 w-100 "
                 placeholder="Search products by name, description, or category..."
                 value={searchTerm}
                 onChange={(e) => setSearchTerm(e.target.value)}

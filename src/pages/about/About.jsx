@@ -56,6 +56,7 @@ export default function About() {
       role: "Frontend Developer",
       icon: "fa-cloud"
     }
+
   ];
 
   return (

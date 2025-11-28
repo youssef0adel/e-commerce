@@ -3,7 +3,10 @@
   position: relative;
   height: 100vh;
   min-height: 600px;
-  background: linear-gradient(135deg, #4963d8 0%, #3568b3 100%);
+  /* background: linear-gradient(135deg, #4963d8 0%, #3568b3 100%); */
+  background-image: url(../../assets/pexels-ron-lach-9595285.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -41,13 +44,13 @@
   line-height: 1.2;
 }
 
-.highlight {
-  color: #ffd700;
-  background: linear-gradient(45deg, #ffd700, #ffed4e);
+/* .highlight {
+  color: #8c00ff;
+  background: linear-gradient(45deg, #4963d8, #3568b3);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
-}
+} */
 
 .hero-subtitle {
   font-size: 1.3rem;

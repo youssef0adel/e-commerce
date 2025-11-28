@@ -141,3 +141,9 @@
   border-color: #bee5eb;
   color: #0c5460;
 }
+
+
+.Product-image img
+{
+  height: 400px;
+}

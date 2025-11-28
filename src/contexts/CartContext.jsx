@@ -2,11 +2,17 @@ import { createContext, useContext, useEffect, useMemo, useState } from 'react';
 import { readJSON, writeJSON } from '../utils/localStorageHelpers';
 const KEY = 'wc_cart_v1';
 const CartContext = createContext();
+
+
+
 export function CartProvider({ children }) {
+
   const [items, setItems] = useState([]);
+
   useEffect(() => {
     const saved = readJSON(KEY) || [];
     setItems(saved);}, []);
+    
   useEffect(() => {
     writeJSON(KEY, items);}, [items]);
   function addToCart(product, qty = 1) {
